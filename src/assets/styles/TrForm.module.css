@@ -1,0 +1,33 @@
+.container {
+    width: 98%;
+}
+
+.container_area{
+    resize: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    word-break: break-word;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.close_btn {
+    background-color: #ff4848;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+}
+
+.close_btn:hover {
+    background-color: #ff2929;
+    transition: .2s;
+}

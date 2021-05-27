@@ -1,9 +1,10 @@
 import React from 'react';
 import {connect} from "react-redux";
+import st from '../assets/styles/card.module.css'
 
 const TrCard = React.memo(({ text, id, listID, index, dispatch }) => {
   return (
-    <div>{text}</div>
+    <div className={st.wrapper}>{text}</div>
   )
 })
 

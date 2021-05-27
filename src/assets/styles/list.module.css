@@ -1,0 +1,15 @@
+.wrapper {
+    border-radius: 3px;
+    width: 250px;
+    margin-right: 15px;
+    padding: 5px;
+    background-color: rgba(235, 236, 240, 0.83);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wrapper_header {
+    font-family: Montserrat-Bold, serif;
+    font-size: 20px;
+}

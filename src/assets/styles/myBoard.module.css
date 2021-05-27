@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.wrapper_header {
+    font-family: Montserrat-Bold,serif;
+    font-size: 36px;
+}
+
+.wrapper_items {
+    display: flex;
+    flex-direction: row;
+}

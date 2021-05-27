@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import {setCurrentBoard} from "../store/actions";
 import TrList from "../components/TrList";
 import TrCreate from "../components/TrCreate";
+import st from '../assets/styles/myBoard.module.css'
 
 const MyBoard = (props) => {
   React.useEffect(() => {
@@ -13,8 +14,6 @@ const MyBoard = (props) => {
   const { boardID } = match.params;
   const board = boards[boardID];
 
-  console.log(boards)
-  console.log(boardID)
   if (!board) {
     return <div>Нет досок</div>
   }
@@ -22,11 +21,11 @@ const MyBoard = (props) => {
   const listOrder = board.lists
 
   return (
-    <div>
-      <div>
+    <div className={st.wrapper}>
+      <div className={st.wrapper_header}>
         {board.boardTitle}
       </div>
-      <div>
+      <div className={st.wrapper_items}>
         {
           listOrder.map((listID, index) => {
             const list = lists[listID]

@@ -1,0 +1,13 @@
+.wrapper {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .27);
+    position: fixed;
+}
+
+.wrapper_logo {
+    width: 65px;
+    height: auto;
+}
